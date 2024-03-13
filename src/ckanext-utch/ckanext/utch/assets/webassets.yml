@@ -1,0 +1,14 @@
+# utch-js:
+#   filter: rjsmin
+#   output: ckanext-utch/%(version)s-utch.js
+#   contents:
+#     - js/utch.js
+#   extra:
+#     preload:
+#       - base/main
+
+# utch-css:
+#   filter: cssrewrite
+#   output: ckanext-utch/%(version)s-utch.css
+#   contents:
+#     - css/utch.css

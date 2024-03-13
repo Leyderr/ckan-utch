@@ -7,6 +7,9 @@ COPY docker-entrypoint.d/* /docker-entrypoint.d/
 # runtime mounted ones)
 COPY patches ${APP_DIR}/patches
 
+# Descomentar esta linea
+# RUN pip install -r requirements.txt
+
 RUN apk add gnupg
 # Agregar el script para instalar el controlador ODBC y las herramientas de MSSQL
 COPY install_mssql_tools.sh /usr/local/bin/
